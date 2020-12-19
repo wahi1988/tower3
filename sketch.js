@@ -12,7 +12,7 @@ var polygon_img, backgroundImg;
 var score=0;
 var bg = "images/light.jpg";
 function preload(){
-  getBackgroundImage();
+  
   polygon_img=loadImage("images/polygon.png");
   
 }
@@ -148,6 +148,8 @@ function draw() {
   blocks7.score();
   blocks8.score();
   blocks9.score();
+
+getBackgroundImage();
 }
 function mouseDragged(){
   Matter.Body.setPosition(this.polygon,{x:mouseX,y:mouseY});
